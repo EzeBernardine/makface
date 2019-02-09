@@ -1,4 +1,50 @@
 body {
-  background-color: #e3e5ea;
-  /* background-color: rgb(49, 49, 71) */
+  background-color: #f7f7f8;
+  margin: 0
+}
+p, h1 {
+  margin: 0;
+  padding: 0
+}
+.logo {
+  position: fixed;
+  height: 40vh;
+  width: 40vh;
+  background-color: rgb(49, 49, 71);
+  transform: rotate(45deg);
+  margin: -10% 0  0% 15%;
+  display: flex;
+  z-index: 0;
+}
+.logoIcon {
+  color: #e3e5ea;
+  transform: rotate(-45deg);
+  font-size: 100px;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 90vh ;
+  text-align: center;
+}
+.middle {
+  justify-content: center;
+  align-items: center
+}
+.description {
+  margin: 0 0 0 20px;
+  z-index: 2;
+}
+.name {
+  font-size: 50px
+}
+.theme {
+  font-size: 10px
+}
+.bButton {
+  border: 0;
+  padding: 7px 10px;
+  background-color: rgb(49, 49, 71);
+  color: #e3e5ea;
+  border-radius: 5px
 }
