@@ -1,3 +1,7 @@
+
+@import url(https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple);
+@import url(https://fonts.googleapis.com/css?family=Rancho&effect=3d-float);
+
 body {
   background-color: #f7f7f8;
   margin: 0
@@ -6,15 +10,24 @@ p, h1 {
   margin: 0;
   padding: 0
 }
-.logo {
+.logoDiv {
   position: fixed;
-  height: 40vh;
-  width: 40vh;
+  top: 30%;
+  left:  15%;
+}
+.logo {
+  border: 0.006px solid #e3e5ea;
+  height: 30vh;
+  width: 30vh;
   background-color: rgb(49, 49, 71);
   transform: rotate(45deg);
-  margin: -10% 0  0% 15%;
   display: flex;
   z-index: 0;
+  box-shadow: 10px 10px 8px -2px black;
+}
+.logo:hover {
+  background-color: rgba(49, 49, 71, 0.925);
+  box-shadow: 10px 10px 8px -2px rgba(0, 0, 0, 0.801);
 }
 .logoIcon {
   color: #e3e5ea;
@@ -23,28 +36,61 @@ p, h1 {
 }
 .container {
   height: 100vh;
+  width: 100%;
   display: grid;
-  grid-template-rows: 90vh ;
+  grid-template-rows: 90vh 10vh;
   text-align: center;
 }
 .middle {
   justify-content: center;
   align-items: center
+} 
+.header {
+  z-index: 1;
 }
 .description {
-  margin: 0 0 0 20px;
-  z-index: 2;
+  margin: 0 0% 5% 0%;
+  font-size: 70%
 }
 .name {
-  font-size: 50px
-}
-.theme {
-  font-size: 10px
+  font-size: 50px;
+  color: black
 }
 .bButton {
   border: 0;
   padding: 7px 10px;
   background-color: rgb(49, 49, 71);
   color: #e3e5ea;
-  border-radius: 5px
+  border-radius: 5px;
+  margin: 10px 0
+}
+.bButton:hover {
+  background-color: rgba(49, 49, 71, 0.925);
+  color: #e3e5eae1;
+}
+.theme {
+  font-size: 10px;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 35%
+}
+@media only screen and (max-width: 1011px) {
+  .container {
+    font-size: 90%
+  }
+  .logoDiv {
+    top: 5%;
+  }
+  .logo {
+    height: 20vh;
+    width: 20vh;
+  }
+  .logoIcon {
+    font-size: 70px
+  }
+  .header {
+    margin:  20% 0 0 0
+  }
 }
