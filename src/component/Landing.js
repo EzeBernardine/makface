@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './Landing.css';
+import './Style.css';
 import { IoLogoWhatsapp , IoLogoFacebook} from "react-icons/io";
 import { FaTwitterSquare } from "react-icons/fa";
 
 class Landing extends Component {
   render() {
     return (
-      <div className='container middle'>
+      <div className='container Landing_container middle'>
         <div className='logoDiv'>
           <div className='logo middle '>
             <h1 className='logoIcon font-effect-3d-float'>p</h1>

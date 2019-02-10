@@ -1,12 +1,14 @@
 
+
+/* Landing page */
 @import url(https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple);
 @import url(https://fonts.googleapis.com/css?family=Rancho&effect=3d-float);
 
 body {
-  background-color: #f7f7f8;
+  
   margin: 0
 }
-p, h1 {
+p, h1, input {
   margin: 0;
   padding: 0
 }
@@ -38,8 +40,11 @@ p, h1 {
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-rows: 90vh 10vh;
+}
+.Landing_container {
   text-align: center;
+  background-color: #f7f7f8;
+  grid-template-rows: 90vh 10vh;
 }
 .middle {
   justify-content: center;
@@ -62,10 +67,11 @@ p, h1 {
   background-color: rgb(49, 49, 71);
   color: #e3e5ea;
   border-radius: 5px;
-  margin: 10px 0
+  margin: 10px 0;
+  opacity: .8;
 }
 .bButton:hover {
-  background-color: rgba(49, 49, 71, 0.925);
+  opacity: 1;
   color: #e3e5eae1;
 }
 .theme {
@@ -93,4 +99,30 @@ p, h1 {
   .header {
     margin:  20% 0 0 0
   }
+}
+/* IconHeader */
+.IconHeader_logoDiv {
+  top: 15%;
+  left: 19.5%;
+}
+/* SignIn page */
+.smallLogo {
+  height: 20vh;
+  width: 20vh;
+}
+.centerTx {
+  text-align: center
+}
+.SignInForm_container {
+  height: 50vh;
+  width: 100vh;
+  background-color: #f7f7f8;
+  box-sizing: border-box;
+  display: grid;
+}
+.Input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(49, 49, 71);
+  background-color: transparent;
 }
