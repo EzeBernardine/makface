@@ -1,0 +1,27 @@
+
+
+.Landing_container {
+  text-align: center;
+  background-color: #f7f7f8;
+  grid-template-rows: 90vh 10vh;
+}
+
+.header {
+  z-index: 1;
+}
+.description {
+  margin: 0 0% 5% 0%;
+  font-size: 100%
+}
+.name {
+  font-size: 50px;
+  color: black
+}
+
+.bButton:hover {
+  opacity: 1;
+  color: #e3e5eae1;
+}
+.theme {
+  font-size: 15px;
+}

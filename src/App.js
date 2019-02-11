@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 // import Landing from './component/Landing';
-import SignIn from './component/SignIn'
+import SignUp from './component/SignUp'
 import './App.css';
+// import IconHeader from './component/IconHeader'
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <SignIn />
+        <SignUp/>
         {/* <Landing /> */}
+        {/* <IconHeader /> */}
       </div>
     );
   }

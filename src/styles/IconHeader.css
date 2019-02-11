@@ -1,0 +1,12 @@
+.logo {
+  border: 0.006px solid #e3e5ea;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(49, 49, 71);
+  display: flex;
+  z-index: 0;
+}
+.logo:hover {
+  background-color: rgba(49, 49, 71, 0.925);
+  box-shadow: 10px 10px 8px -2px rgba(0, 0, 0, 0.801);
+}

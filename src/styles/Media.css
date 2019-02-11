@@ -1,0 +1,22 @@
+
+
+
+
+@media only screen and (max-width: 1011px) {
+  .container {
+    font-size: 90%
+  }
+  .logoDiv {
+    top: 5%;
+  }
+  .logo {
+    height: 20vh;
+    width: 20vh;
+  }
+  .logoIcon {
+    font-size: 70px
+  }
+  .header {
+    margin:  20% 0 0 0
+  }
+}

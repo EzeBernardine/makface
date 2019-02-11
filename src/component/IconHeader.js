@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-import './Style.css';
+import '../styles/General.css';
+import '../styles/IconHeader.css';
 
-class IconHeader extends Component {
+class IconHeader extends Component { 
   render() {
     return (
-      <div className=''>
-        <div className='IconHeader_logoDiv logoDiv'>
-          <div className='logo middle smallLogo'>
-            <h5 className='logoIcon font-effect-3d-float'>p</h5>
-          </div>
-        </div>
+      <div className='logo G_middle'>
+        <h5 className='G_logoIcon font-effect-3d-float G_SmallerFontStyle'>p</h5>
       </div>
     );
   }

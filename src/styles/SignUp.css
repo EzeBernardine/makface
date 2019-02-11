@@ -1,0 +1,26 @@
+
+.formSize {
+  height: 60vh;
+  width: 50vw;
+  background-color: #f7f7f8;
+  box-shadow: 0px 10px 8px -8px rgb(49, 49, 71);
+  box-sizing: border-box;
+}
+.SignUpForm_container {
+  padding: 10px 50px
+}
+Input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(49, 49, 71);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 0 0 0 5px 
+}
+.btnDiv button{
+  margin: 10px
+}
+.iconPosition{
+  top: 10%;
+  left:  20%;
+}
