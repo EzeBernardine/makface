@@ -9,12 +9,12 @@ class SignUp extends Component {
     return (
       <div className=' G_container G_middle'>
 
-          <div className ='G_middle G_smallLogo G_logoDiv iconPosition'><IconHeader /></div>
+          <div className =' G_smallLogo G_logoDiv iconPosition'><IconHeader /></div>
           
           <form className='formSize'>
             <div class="SignUpForm_container middle">
               <h1 className='G_centerTx G_subHeaderFontStyle'>Sign Up</h1>
-              <p className=' G_subHeaderFont G_SubHeaderLineHeight G_SmallerFontStyle'>Please fill in this form to create an account.</p>
+              <p className=' G_subHeaderFont  G_SmallerFontStyle'>Please fill in this form to create an account.</p>
 
               <label for="email" className='G_SubHeaderLineHeight G_subHeaderFontStyle'><b>Username</b></label>
               <input type="text" placeholder="Enter Username"name="name" required className='G_smallerFont'></input>

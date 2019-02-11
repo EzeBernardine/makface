@@ -1,6 +1,6 @@
 
 .formSize {
-  height: 60vh;
+  height: max-content;
   width: 50vw;
   background-color: #f7f7f8;
   box-shadow: 0px 10px 8px -8px rgb(49, 49, 71);
@@ -21,6 +21,31 @@ Input {
   margin: 10px
 }
 .iconPosition{
-  top: 10%;
+  top: 13%;
   left:  20%;
+}
+
+@media only screen and (max-width: 1011px) {
+  .formSize {
+    width: 70vw;
+  }
+  .iconPosition{
+    top: 6%;
+    left: 8%;
+  }
+  .G_smallLogo {
+    height: 10vh !important;
+    width: 10vh !important;
+  }
+  .G_logoIcon {
+    font-size: 300% !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .formSize {
+    width: 90vw;
+  }
+  .G_logoIcon {
+    font-size: 200% !important;
+  }
 }

@@ -83,19 +83,21 @@ p, h1, input {
   transform: rotate(45deg);
   position: fixed;
 }
+.G_largeLogo {
+  height: 30vh !important;
+  width: 30vh !important;
+}
 .G_smallLogo {
   height: 20vh !important;
   width: 20vh !important;
 }
-.G_largeLogo {
-  top: 30%;
-  left:  15%;
-  height: 30vh !important;
-  width: 30vh !important;
+.G_smallLestogo {
+  height: 10vh !important;
+  width: 10vh !important;
 }
-
 .G_logoIcon {
   color: #e3e5ea;
   transform: rotate(-45deg);
-  font-size: 100px;
+  font-size: 500%;
+  padding: 0 0 0 10px
 }

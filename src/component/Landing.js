@@ -7,7 +7,7 @@ import IconFooter from './IconFooter';
 class Landing extends Component {
   render() {
     return (
-      <div className='G_container G_middle Landing_container '>
+      <div className='G_container Landing_container '>
       
        <div className ='logo G_middle G_largeLogo G_logoDiv'><IconHeader /></div>
 
