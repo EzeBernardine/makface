@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import IconHeader from './IconHeader'
 import '../styles/SignUp.css';
 import '../styles/General.css';
+import '../styles/Media.css'
 
 class SignUp extends Component {
   render() {
@@ -9,9 +10,9 @@ class SignUp extends Component {
     return (
       <div className=' G_container G_middle'>
 
-          <div className =' G_smallLogo G_logoDiv iconPosition'><IconHeader /></div>
+          <div className =' G_smallLogo G_logoDiv Sup_iconPosition M_smallLogo '><IconHeader /></div>
           
-          <form className='formSize'>
+          <form className='formSize M_formSize'>
             <div class="SignUpForm_container middle">
               <h1 className='G_centerTx G_subHeaderFontStyle'>Sign Up</h1>
               <p className=' G_subHeaderFont  G_SmallerFontStyle'>Please fill in this form to create an account.</p>

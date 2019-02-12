@@ -84,16 +84,16 @@ p, h1, input {
   position: fixed;
 }
 .G_largeLogo {
-  height: 30vh !important;
-  width: 30vh !important;
+  height: 30vh ;
+  width: 30vh ;
 }
 .G_smallLogo {
-  height: 20vh !important;
-  width: 20vh !important;
+  height: 20vh ;
+  width: 20vh ;
 }
-.G_smallLestogo {
-  height: 10vh !important;
-  width: 10vh !important;
+.G_smallLesLogo {
+  height: 10vh ;
+  width: 10vh ;
 }
 .G_logoIcon {
   color: #e3e5ea;
@@ -101,3 +101,4 @@ p, h1, input {
   font-size: 500%;
   padding: 0 0 0 10px
 }
+

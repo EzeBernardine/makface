@@ -20,32 +20,8 @@ Input {
 .btnDiv button{
   margin: 10px
 }
-.iconPosition{
+.Sup_iconPosition{
   top: 13%;
   left:  20%;
 }
 
-@media only screen and (max-width: 1011px) {
-  .formSize {
-    width: 70vw;
-  }
-  .iconPosition{
-    top: 6%;
-    left: 8%;
-  }
-  .G_smallLogo {
-    height: 10vh !important;
-    width: 10vh !important;
-  }
-  .G_logoIcon {
-    font-size: 300% !important;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .formSize {
-    width: 90vw;
-  }
-  .G_logoIcon {
-    font-size: 200% !important;
-  }
-}
