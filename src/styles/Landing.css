@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css?family=Felipa');
 .Landing_container {
   text-align: center;
   background-color: #f7f7f8;
@@ -13,8 +13,12 @@
   z-index: 1;
 }
 .description {
-  margin: 0 0% 10% 0%;
-  font-size: 100%
+  margin: 0% 5% 10% 5%;
+  font-size: 120%
+}
+.on {
+  font-size: 150%;
+  font-family: 'Felipa', cursive;
 }
 .name {
   font-size: 50px;

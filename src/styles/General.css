@@ -4,6 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Rancho&effect=3d-float);
 @import url('https://fonts.googleapis.com/css?family=Lora');
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Oswald|Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Felipa');
 
 a {
   text-decoration: none
@@ -30,13 +31,13 @@ p, h1, input {
 
 /* Text */
 .G_centerTx {
-  text-align: center
+  text-align: center;
 }
 .G_smallerFont {
-  font-size: 12px;
+  font-size: 14px;
 }
 .G_subHeaderFont {
-  font-size: 14px
+  font-size: 16px
 }
 .G_textLineHeight {
   line-height: 1.6rem
@@ -45,7 +46,7 @@ p, h1, input {
   line-height: 2.5rem
 }
 .G_DngerText {
-  color: rgb(173, 2, 2)
+  /* color: rgb(173, 2, 2) */
 }
 .G_SmallerFontStyle{
   font-family: 'Lora', serif;
@@ -71,6 +72,10 @@ p, h1, input {
 }
 .G_bigBtn {
   font-size: 20px
+}
+.G_longBtn {
+  padding: 10px 0;
+  width: 100%;
 }
 .G_smallBtn {
   font-size: 12px
@@ -99,6 +104,6 @@ p, h1, input {
   color: #e3e5ea;
   transform: rotate(-45deg);
   font-size: 500%;
-  padding: 0 0 0 10px
+  padding: 0 0 0 0px
 }
 

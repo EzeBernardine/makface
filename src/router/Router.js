@@ -2,7 +2,8 @@ import React from 'react';
 import {BrowserRouter, Route, Switch,Link , NavLink} from 'react-router-dom';
 import Landing from '../component/Landing';
 import SignUp from '../component/SignUp';
-import NotFound from '../component/NotFound';
+import SignIn from '../component/SignIn'
+// import NotFound from '../component/NotFound';
 
 const Router = () => ( 
  <BrowserRouter>
@@ -10,7 +11,8 @@ const Router = () => (
       <Switch>
             <Route path="/" component={Landing} exact={true} />
             <Route path="/SignUp" component={SignUp }/>
-            <Route component={NotFound} />
+            <Route path="/SignIn" component={SignIn }/>
+            {/* <Route component={NotFound} /> */}
       </Switch>
   </div>
  </BrowserRouter>

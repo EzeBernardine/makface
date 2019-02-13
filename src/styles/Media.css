@@ -46,10 +46,27 @@
   .M_smallBtn {
     font-size: 12px
   }
+  /* Handling landing and signUp font */
   .M_subHeaderFont {
-    font-size: 14px
+    font-size: 14px !important
   }
+  /* Handling landing and signUp font */
   .M_smallerFont {
-    font-size: 12px;
+    font-size: 12px !important;
   }
+  /* COming fron signIn */
+ .M_flex {
+   display: grid !important;
+   margin: 15% 0 10% 0  !important
+ }
+  /* COming fron signIn */
+ .M_info {
+  width: 100% !important;
+  order: 2;
+}
+/* COming fron signIn */
+.M_SignInForm_container {
+  width: 100% !important;
+  order: 1;
+}
 }

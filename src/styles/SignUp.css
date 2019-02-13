@@ -15,7 +15,8 @@ Input {
   border-bottom: 1px solid rgb(49, 49, 71);
   background-color: transparent;
   border-radius: 5px;
-  padding: 0 0 0 5px 
+  padding: 0 0 0 5px ;
+  box-sizing: border-box;
 }
 .btnDiv button{
   margin: 10px

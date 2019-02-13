@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import IconHeader from './IconHeader'
+import IconHeader from './IconHeader';
+import {NavLink} from 'react-router-dom';
 import '../styles/SignUp.css';
 import '../styles/General.css';
 import '../styles/Media.css'
@@ -13,20 +14,20 @@ class SignUp extends Component {
           <div className =' G_smallLogo G_logoDiv Sup_iconPosition M_smallLogo '><IconHeader /></div>
           
           <form className='formSize M_formSize'>
-            <div class="SignUpForm_container middle">
+            <div class="SignUpForm_container">
               <h1 className='G_centerTx G_subHeaderFontStyle'>Sign Up</h1>
-              <p className=' G_subHeaderFont  G_SmallerFontStyle'>Please fill in this form to create an account.</p>
+              <p className=' G_subHeaderFont M_subHeaderFont  G_SmallerFontStyle'>Please fill in this form to create an account.</p>
 
               <label for="email" className='G_SubHeaderLineHeight G_subHeaderFontStyle'><b>Username</b></label>
-              <input type="text" placeholder="Enter Username"name="name" required className='G_smallerFont'></input>
+              <input type="text" placeholder="Enter Username"name="name"  className='G_smallerFont'></input>
 
               <label className='G_SubHeaderLineHeight G_subHeaderFontStyle'><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" className='G_smallerFont' required></input>
+              <input type="password" placeholder="Enter Password" name="psw" className='G_smallerFont' ></input>
 
               <label for="psw-repeat" className='G_SubHeaderLineHeight G_subHeaderFontStyle'><b>Repeat Password</b></label>
-              <input type="password" placeholder="Repeat Password" name="psw-repeat" className='G_smallerFont' required></input>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" className='G_smallerFont' ></input>
 
-              <p className='G_smallerFont G_centerTx G_textLineHeight G_SmallerFontStyle'>By creating an account, you agree to our
+              <p className='G_smallerFont G_centerTx G_textLineHeight G_SmallerFontStyle M_smallerFont'>By creating an account, you agree to our
                 <a href='#'> Terms & Policies</a>
               .</p>
 
@@ -34,7 +35,9 @@ class SignUp extends Component {
                 <button type="button" className='G_smallBtn G_Btn' >Cancel</button>
                 <button type="submit" className='G_smallBtn G_Btn'>SignUp</button>
               </div>
-              <p className='G_smallerFont G_centerTx G_textLineHeight G_SmallerFontStyle'>You have an account? <a href='#'>Singin</a></p>
+              <p className='G_smallerFont G_centerTx G_textLineHeight G_SmallerFontStyle'>You have an account? 
+              <NavLink  exact={true} to="/SignIn" activeClassName="is-active"> Singin </NavLink>
+              </p>
             </div>
           </form> 
 

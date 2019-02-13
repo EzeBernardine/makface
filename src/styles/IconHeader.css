@@ -10,6 +10,9 @@
   background-color: rgba(49, 49, 71, 0.925);
   box-shadow: 10px 10px 8px -2px rgba(0, 0, 0, 0.801);
 }
+.logo:focus {
+  border: none;
+}
 .iconPosition {
   top: 30%;
   left:  15%;

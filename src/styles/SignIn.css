@@ -1,0 +1,44 @@
+
+.SI_formSize{
+  height: max-content;
+  width: 60vw;
+  background-color: #f7f7f8;
+  box-shadow: 0px 10px 8px -8px rgb(49, 49, 71);
+  box-sizing: border-box;
+  grid-gap: 1.5%
+}
+.SignInForm_container {
+  width: 60%;
+}
+.S_info {
+  background: url('../image/macketWorld.png') no-repeat;
+  background-size: contain;
+  background-color: rgba(49, 49, 71, .9);
+  background-position: center;
+  width: 37%;	
+  color: #e3e5ea;
+  display: grid;
+}
+.S_info h1{
+  align-self: flex-end
+}
+.checkBox {
+  width: 0;
+}
+.forgotPasswordDiv {
+  background-color: rgba(49, 49, 71, .03);
+  padding:0 15px;
+  justify-content: space-between
+}
+.forgotPassword {
+  padding-top: 16px ;
+  float: right;
+}
+.SI_iconPosition {
+  top: 5%;
+  left: 4%;
+  font-size: 50% !important
+}
+.SI_FooterPosition {
+  align-self: flex-end
+}
