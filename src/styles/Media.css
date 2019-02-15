@@ -3,20 +3,19 @@
 @media only screen and (max-width: 1011px) {
   /* Its a static case coming from IconHeader directly */
   .G_logoIcon {
-    font-size: 300% !important;
+    font-size: 60px !important;
   }
   .M_formSize {
     width: 70vw !important;
   }
-  .Sup_iconPosition{
-    top: 3.5% !important;
-    left: 8%	!important;
+  .In_Up_iconPosition{
+    top: 7% !important;
+    left: 4%	!important;
   }
   .M_smallLogo {
     height: 10vh !important;
     width: 10vh !important;
   }
-
   /* Laning */
   .LIconPosition {
     margin: 10% auto  !important;
@@ -36,26 +35,30 @@
 @media only screen and (max-width: 600px) {
   /* Its a static case coming from IconHeader directly */
   .G_logoIcon {
-    font-size: 200% !important;
+    font-size: 40px !important;
   }
   .M_formSize {
     width: 90vw !important;
+    margin-top: 25px
   }
 
   /* Landing */
   .M_smallBtn {
-    font-size: 12px
+    font-size: 14px !important
+  }
+  .M_L_description {
+    margin: 30% 2% 0% 2% !important
   }
   /* Handling landing and signUp font */
   .M_subHeaderFont {
-    font-size: 14px !important
+    font-size: 16px !important
   }
   /* Handling landing and signUp font */
   .M_smallerFont {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
   /* COming fron signIn */
- .M_flex {
+ .M_grid {
    display: grid !important;
    margin: 15% 0 10% 0  !important
  }

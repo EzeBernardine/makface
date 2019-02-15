@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 .SignUpForm_container {
-  padding: 10px 50px
+  padding: 2% 5%;
 }
 Input {
   width: 100%;
@@ -19,10 +19,19 @@ Input {
   box-sizing: border-box;
 }
 .btnDiv button{
-  margin: 10px
+  margin: 0 10px
 }
-.Sup_iconPosition{
-  top: 13%;
-  left:  20%;
+.In_Up_iconPosition{
+  top: 10%;
+  left: 4%;
+  right: 0%;
+  font-size: 30px ;
+  z-index: 2;
 }
 
+.checkBox {
+  margin: 15px auto;
+}
+.test{
+  margin: 15px auto;
+}

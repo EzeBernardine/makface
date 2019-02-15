@@ -1,8 +1,7 @@
+
 .icons {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 35%;
-  font-size: 20px
+  display: grid;
+  justify-content: center;
 }
 .icons span:nth-child(1){
   color: rgb(2, 92, 2);
@@ -18,4 +17,12 @@
 }
 .icons span:nth-child(1):hover, .icons span:nth-child(2):hover, .icons span:nth-child(3):hover{
   opacity: 1;
+}
+.theme {
+  font-size: 15px;
+}
+.AllIcons {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px
 }

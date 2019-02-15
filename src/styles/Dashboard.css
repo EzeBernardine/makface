@@ -1,0 +1,82 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden
+}
+.Profile, .Searchabr, .Advertisment, .loadNew, .newsFeed, .Chart, .Assets, .Unknown{
+  background-color: white;
+}
+
+.dashboard_Container {
+  background-color: #f7f7f8;
+  height: 1550px
+  /* grid-template:
+  ' Searchabr  ' 10vh
+  ' loadNew    ' 200px 
+  '  newsFeed  ' 200px
+  ' newsFeed   ' 200px 
+  ' newsFeed   ' 500px
+  /  50vw;
+  grid-gap: 20px */
+}
+.Profile {
+  /* grid-area: Profile; */
+  position: fixed;
+  top: 80px;
+  right: 0%;
+  left: .8%;
+  width: 19vw;
+  height: 40vh;
+}
+.Searchabr {
+  /* grid-area: Searchabr; */
+  margin: 80px auto 0 auto;
+  width: 50vw;
+  height: 80px
+}
+.Advertisment {
+  /* grid-area: Advertisment; */
+  position: fixed;
+  top: 80px;
+  right: .8%;
+  width: 19vw;
+  height: 40vh;
+}
+.loadNew {
+  height: 100px;
+  width: 50vw;
+  /* grid-area: loadNew; */
+}
+.newsFeed {
+  /* grid-area: newsFeed */
+}
+.Chart {
+  /* grid-area: Chart; */
+  position: fixed;
+  top: 52.5vh;
+  left: .8%;
+  width: 19vw;
+  height: 40vh;
+}
+.Assets {
+  /* grid-area: Assets; */
+  position: fixed;
+  top: 52.5vh;
+  right: .8%;
+  width: 19vw;
+  height: 20vh;
+}
+.Unknown {
+  position: fixed;
+  top: 74.5vh;
+  right: .8%;
+  width: 19vw;
+  height: 30vh;
+}
+.Menu {
+  position: fixed;
+  /* width: 10vh */
+  /* grid-area: Menu; */
+}

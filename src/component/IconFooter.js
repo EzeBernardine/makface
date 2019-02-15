@@ -7,8 +7,12 @@ class IconFooter extends Component {
   render() {
     return (
       <div className='icons'> 
-        <span><IoLogoWhatsapp /></span> <span><IoLogoFacebook/></span> 
-        <span><FaTwitterSquare /></span> 
+       <p className='theme M_smallerFont G_smallerFont'>Enhance your business</p>
+       <div  className='AllIcons'>
+          <span><IoLogoWhatsapp /></span> <span><IoLogoFacebook/></span> 
+          <span><FaTwitterSquare /></span> 
+        </div>
+        
       </div>
     );
   }

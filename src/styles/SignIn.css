@@ -5,22 +5,27 @@
   background-color: #f7f7f8;
   box-shadow: 0px 10px 8px -8px rgb(49, 49, 71);
   box-sizing: border-box;
-  grid-gap: 1.5%
+  grid-gap: 1.5%;
+  align-self: flex-end;
 }
 .SignInForm_container {
   width: 60%;
 }
-.S_info {
+.info {
   background: url('../image/macketWorld.png') no-repeat;
   background-size: contain;
   background-color: rgba(49, 49, 71, .9);
   background-position: center;
   width: 37%;	
   color: #e3e5ea;
-  display: grid;
+  display: grid;;
 }
-.S_info h1{
-  align-self: flex-end
+.info h1{
+  align-self: flex-end;
+  margin: 0 10px
+}
+.info ul {
+  align-self: flex-start;
 }
 .checkBox {
   width: 0;
@@ -34,11 +39,16 @@
   padding-top: 16px ;
   float: right;
 }
-.SI_iconPosition {
-  top: 5%;
+.In_Up_iconPosition{
+  top: 10%;
   left: 4%;
-  font-size: 50% !important
+  right: 0%;
+  font-size: 30px ;
+  z-index: 2;
 }
-.SI_FooterPosition {
-  align-self: flex-end
+.FooterPosition {
+  align-self: center;
+}
+.btn {
+  margin: 20px 0  0 0
 }

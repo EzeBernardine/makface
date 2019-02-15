@@ -28,22 +28,31 @@ p, h1, input {
 .G_flex {
   display: flex;
 }
+.G_padContainer {
+  padding: 20px 
+}
 
 /* Text */
 .G_centerTx {
   text-align: center;
 }
+.G_smallestFont {
+  font-size: 15px;
+}
 .G_smallerFont {
-  font-size: 14px;
+  font-size: 17px;
 }
 .G_subHeaderFont {
-  font-size: 16px
+  font-size: 20px
+}
+.G_biggestFont {
+  font-size: 30px
 }
 .G_textLineHeight {
   line-height: 1.6rem
 }
 .G_SubHeaderLineHeight {
-  line-height: 2.5rem
+  line-height: 3rem
 }
 .G_DngerText {
   /* color: rgb(173, 2, 2) */
@@ -78,7 +87,7 @@ p, h1, input {
   width: 100%;
 }
 .G_smallBtn {
-  font-size: 12px
+  font-size: 16px
 }
 
 
@@ -103,7 +112,35 @@ p, h1, input {
 .G_logoIcon {
   color: #e3e5ea;
   transform: rotate(-45deg);
-  font-size: 500%;
+  /* font-size: 150px; */
   padding: 0 0 0 0px
 }
 
+/* Menu */
+.G_Menu {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  bottom: 0;
+  box-shadow: 0px 10px 8px -8px rgba(49, 49, 71, .5);
+  background-color: rgb(49, 49, 71);
+}
+.G_Menu a{
+  color: #e3e5ea;
+}
+.G_Menu li{
+  list-style-type: none;
+  margin: 0 10px;
+}
+.G_Menu li a{
+  padding: 5px;
+  color: #e3e5ea;
+  border-radius: 5px
+}
+.G_appName{
+  padding: 5px;
+}
+.G_Menu ul{
+  display: inline-flex;
+}

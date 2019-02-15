@@ -1,0 +1,22 @@
+
+
+
+
+
+
+.create_sign_account {
+  margin: 0 0 0 20% ;
+  /* justify-self: flex-end */
+}
+.oneMenu{
+  background-color: rgb(96, 209, 96);
+  color:  rgb(49, 49, 71) !important;
+  padding:  3px;
+  border-radius: 2px;
+}
+.ul {
+  width: 100%
+}
+.listItems span {
+  /* padding: 0 0 10% 0 !important */
+}

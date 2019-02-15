@@ -1,0 +1,24 @@
+.SearchBar_Container {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.SearchInput_Container {
+  width: 95%;
+  height: 70%;
+  border-radius: 5px;
+  background-color:rgb(49, 49, 71);
+}
+.SearchInput_Container input {
+  border-radius: 0;
+  padding: 6px;
+  height: 100%;
+  width: 90%;
+  border: none;
+  background-color:#e3e5ea;
+}
+.SearchInput_Container .NavLink{
+  color:#e3e5ea;
+  width: 10%;
+  height: 90%;
+}
