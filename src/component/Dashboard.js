@@ -14,16 +14,16 @@ class Dashboard extends Component {
   let menu = ['Home', 'Post a commodity', 'Notification', 'List of Shops']
 
     return (
-      <div className='G_container dashboard_Container'>
+      <div className='dashboard_Container'>
        <div className='Menu G_smallerFont '><Menu menu = {menu} name = {makface}/></div>
-       <div className='Profile'><Profile /></div>
-       <div className='Searchabr'><SearchBar /></div>
-       <div className='Advertisment'>Advertisment</div>
-       <div className='loadNew'>loadNew and display settings</div>
-       <div className='newsFeed'>newsFeed</div>
-       <div className='Assets'>Assets/shops/building on rent</div>
-       <div className='Unknown'>Unknown</div>
-       <div className='Chart'>Chart</div>
+       <div className='Profile D_size_position'><Profile /></div>
+       <div className='Assets  D_size_position'>Assets/shops/building on rent</div>
+       <div className='Unknown D_size_position'>Unknown</div>
+       <div className='Chart D_size_position'>Chart</div>
+       <div className='Advertisment D_size_position'>Advertisment</div>
+       <div className='Searchbar centerContent '><SearchBar /></div>
+       <div className='loadNew centerContent'>loadNew and display settings</div>
+       <div className='newsFeed centerContent'>newsFeed</div>
       </div>
     );
   }

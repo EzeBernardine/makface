@@ -13,7 +13,7 @@ class Menu extends Component {
     
     return (
       <div className=''>
-      
+      {/* <img src=require{'../image/global-market.jpg'} ></img> */}
 profile
               
       </div>
