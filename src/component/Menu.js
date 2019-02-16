@@ -21,9 +21,11 @@ class Menu extends Component {
         
           {menu && menu.length === 1 ?
             <span className='create_sign_account '> <a href='#' className='G_smallerFont oneMenu '>{menu}</a></span> : 
-            (<ul className='listItems'> 
-              <li><a href='#' className='G_smallestFont'><span className='G_subHeaderFont'>< IoIosHome /></span>{menu[0]}</a></li> <li><a href='#' className='G_smallestFont'><span className='G_subHeaderFont'><FaUpload /></span>{menu[1]}</a></li> <li><a href='#' className='G_smallestFont'><span className='G_subHeaderFont'><IoMdNotifications /></span>{menu[2]}</a></li>
-              <li><a href='#' className='G_smallestFont'><span className='G_subHeaderFont'><FaList /></span>{menu[3]}</a></li>
+            (<ul className='listItems G_smallestFont '> 
+              <li><a href='#' ><span >< IoIosHome /></span>{menu[0]}</a></li> 
+              <li><a href='#' ><span ><FaUpload /></span>{menu[1]}</a></li> 
+              <li><a href='#' ><span ><IoMdNotifications /></span>{menu[2]}</a></li>
+              <li><a href='#' ><span ><FaList /></span>{menu[3]}</a></li>
             </ul>)
           }
 

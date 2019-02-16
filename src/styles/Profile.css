@@ -1,0 +1,108 @@
+
+.profile_container {
+  padding:  10px ;
+  display: grid;
+  height: 95%;
+}
+.ImgDiv {
+  height: 100px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  position: relative;
+  
+}
+.imgOverlay {
+  border-radius: 50%;
+  height: 100px;
+  background-color:rgb(49, 49, 71);
+  width: 100px;
+  position: absolute;
+}
+.ImgDiv img{
+  max-width: 100%; 
+  height: auto;
+  display:block; 
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: absolute;
+  border: 3px solid  rgb(49, 49, 71);
+}
+
+.seller_BuyerDiv {
+  position: absolute;
+  right: 0;
+  left: 110px;
+  display: grid;
+  grid-gap: 5px;
+}
+.seller_BuyerDiv *{
+  margin: 3px 0;
+}
+.seller_Buyer {
+  color:  rgb(96, 209, 96);
+  border-radius: 2px;
+  padding: 2px 5px;
+  margin: 0 3px 0 0;
+  background-color: #f7f7f8;
+}
+.nationality h3{
+  padding: 0;
+  margin: 0;
+}
+.nationality {
+  grid-gap: 5px
+}
+
+.profile_Name {
+  margin: 5px 0;
+  width: 100%;
+  height: 40px;
+  font-weight: bold;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+.p_font {
+  font-size: 10px
+}
+.p_bigFont {
+  font-size: 11px
+}
+.profieIconSize {
+  font-size: 12px
+}
+
+.data {
+  width: 100%;
+  grid-gap: 5px;
+  font-size: 12px;
+  display: grid;
+}
+.commentaries {
+  flex: 2;
+  flex-wrap: wrap;
+  grid-gap: 5px;
+}
+.eachData {
+  width: fit-content;
+  background-color: #f7f7f8;
+  padding: 3px 5px
+}
+.eachData span{
+  color: rgb(49, 49, 71);
+  padding-left: 5px
+}
+.location {
+  grid-gap: 10px;
+  margin: 10px 0
+}
+.location h3 , .locatio span{
+  padding: 0;
+  margin: 0
+}
+.socialMedia {
+  align-self: flex-end;
+  grid-gap: 5px
+}
+.socialMedia span{
+}
