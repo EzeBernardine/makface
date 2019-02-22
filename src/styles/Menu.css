@@ -1,12 +1,17 @@
 
-
-
-
-
-
 .create_sign_account {
   margin: 0 0 0 20% ;
-  /* justify-self: flex-end */
+  justify-self: flex-end;
+  
+}
+.listItems li a {
+  display: flex;
+  align-content: center
+}
+.listItems li a span{
+  padding: 0px 3px;
+  display: flex;
+  align-content: center
 }
 .oneMenu{
   background-color: rgb(96, 209, 96);

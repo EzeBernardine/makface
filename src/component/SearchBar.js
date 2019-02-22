@@ -8,21 +8,23 @@ import '../styles/SearchBar.css'
 
 
 
-class searchBar extends Component {
+class SearchBar extends Component {
+
   render() {
-    
     return (
-      <div className='SearchBar_Container G_flex G_middle '>
+      <div className='SearchBar_Container G_flex G_middle G_roundContainer'>
 
-        <div className='SearchInput_Container G_flex G_middle '>
-          <input type="text" placeholder="Search.." className='G_smallerFont'></input>
+        <form className='SearchInput_Container G_flex G_middle' id= 'nothing'>
+         
+          <input type="text" placeholder="Search.." className='G_smallerFont input SearchInput' id = 'SearchInput'>
+          </input>
 
-          <NavLink  exact={true} to="/Dashboard" className='G_flex G_middle G_biggestFont NavLink' activeClassName="is-active" ><FaSistrix /> </NavLink>
-        </div>
+          <button  className='G_flex G_middle G_biggestFont  navLinkIcon' ><FaSistrix /> </button>
+        </form>
 
       </div>
     );
   }
 }
 
-export default searchBar;
+export default SearchBar;

@@ -4,6 +4,7 @@ import IconHeader from './IconHeader';
 import IconFooter from './IconFooter';
 import Menu from '../component/Menu'
 import '../styles/SignIn.css';
+import '../styles/SignUp.css';
 import '../styles/General.css';
 import '../styles/Media.css'
 
@@ -11,7 +12,7 @@ class SignIn extends Component {
   render() {
 
     let makface = ['Makface' ]
-    let menu = [ 'Create a New Account']
+    let menu = ['Create a New Account']
 
     return (
       <div className=' G_container G_middle '>
@@ -24,7 +25,7 @@ class SignIn extends Component {
 
           <form className='SI_formSize M_formSize G_flex M_grid'>
             <div className='info M_info G_middle'>   
-              <h1 className='G_SubHeaderLineHeight G_subHeaderFont G_subHeaderFontStyle '>makface is here to help you</h1>
+              <h1 className='G_SubHeaderLineHeight G_subHeaderFont G_subHeaderFontStyle '>Makface is here to help you</h1>
               <ul className='G_smallerFont G_SmallerFontStyle G_textLineHeight'>
                 <li>Connect with your sellers</li>
                 <li>Connect with your buyers</li>
@@ -37,10 +38,10 @@ class SignIn extends Component {
 
               <div >
                 <label for="uname" className='G_SubHeaderLineHeight G_subHeaderFontStyle G_subHeaderFont M_subHeaderFont'><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" className='G_smallerFont'></input>
+                <input type="text" placeholder="Enter Username" name="uname" className='G_smallerFont input'></input>
 
                 <label for="psw" className='G_SubHeaderLineHeight G_subHeaderFontStyle G_subHeaderFont M_subHeaderFont'><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" className='G_smallerFont'></input>
+                <input type="password" placeholder="Enter Password" name="psw" className='G_smallerFont input'></input>
 
                 
 
@@ -49,13 +50,13 @@ class SignIn extends Component {
                 </NavLink>
 
                 <label className='G_SubHeaderLineHeight '>
-                  <input type="checkbox" checked="checked" name="remember" className='checkBox G_smallerFont'></input> Remember me
+                  <input type="checkbox" checked="checked" name="remember" className='checkBox  G_smallerFont'></input> Remember me
                 </label>
               </div>
 
                <div class="forgotPasswordDiv ">
-                <button type="button" className='G_smallBtn G_Btn M_smallBtn'> Cancel </button>
-                <span class="forgotPassword G_smallerFont M_smallerFont">Forgot <a href="#">password?</a></span>
+                <NavLink exact={true} to="/" activeClassName="is-active" type="button" className='G_smallBtn G_Btn M_smallBtn'> Cancel </NavLink>
+                <NavLink exact={true} to="/" activeClassName="is-active" class="forgotPassword G_smallerFont M_smallerFont">Forgot <a href="#">password?</a></NavLink>
               </div>
             </div>
           </form> 

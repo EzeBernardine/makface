@@ -1,0 +1,55 @@
+
+.LoadNew_Container {
+  width: 95%;
+  height: 95%;
+  margin:  10px auto
+}
+.postText {
+  text-decoration: underline;
+  color: rgba(49, 49, 71, .8);
+  margin-bottom: 10px
+}
+p.postText:hover {
+  color: rgb(49, 49, 71);
+}
+
+.LoadNewInput_Container {
+  display: grid;
+  grid-gap: 10px
+  /* position: relative; */
+}
+.LoadNew_Container .input{
+  background-color: #f7f7f8;
+  height: fit-content;
+  border: 1px solid rgba(49, 49, 71, .3);
+}
+.nameOfCommodityDiv {
+  justify-content: flex-start;
+  grid-gap: 10px;
+}
+#NewLoadInput {
+  width: 50%;
+  justify-self: flex-start;
+  border: 1px solid  rgba(49, 49, 71, .3);
+}
+.testArea {
+  resize: none;
+}
+.iconButton {
+  justify-content: space-between;
+}
+.LoadNewIcons span{
+  padding: 0 10px;
+  color: rgb(49, 49, 71);
+  align-content: center;
+  display: flex;
+}
+
+.loadNewOverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  overflow: hidden
+}
+

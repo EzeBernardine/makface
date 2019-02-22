@@ -32,18 +32,18 @@
 }
 .forgotPasswordDiv {
   background-color: rgba(49, 49, 71, .03);
-  padding:0 15px;
+  padding: 15px;
   justify-content: space-between
 }
 .forgotPassword {
-  padding-top: 16px ;
+  /* padding-top: 16px ; */
   float: right;
 }
 .In_Up_iconPosition{
   top: 10%;
   left: 4%;
   right: 0%;
-  font-size: 30px ;
+  font-size: 25px ;
   z-index: 2;
 }
 .FooterPosition {

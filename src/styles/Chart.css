@@ -1,0 +1,41 @@
+
+
+.Cart_main{
+  padding: 10px;
+}
+.cart{
+  border-bottom: 1px solid  rgb(64, 64, 87);
+  font-weight: bold
+}
+.cartImage {
+  height: auto;
+  width: 50px;
+  padding: 5px;
+}
+.price{
+  font-weight: bold
+}
+.cart_container{
+  margin: 5px 0;
+  position: relative;
+}
+.flexRight {
+  flex: 1
+}
+.flexLeft {
+  flex: 3
+}
+.cartOverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+}
+.cartOverlay:hover {
+  opacity: 1;
+}
+.eachCartImage {
+  position: relative;
+  float: right
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { IoMdNotifications,IoIosHome } from "react-icons/io";
+import {NavLink} from 'react-router-dom';
+import { IoMdNotifications,IoMdCart } from "react-icons/io";
 import { FaUpload, FaList } from "react-icons/fa";
 import '../styles/Menu.css';
 import '../styles/General.css';
@@ -19,14 +20,24 @@ class Menu extends Component {
 
           {name? <div><a href='#' className='G_biggestFont   G_subHeaderFontStyle G_appName'>{name}</a></div> : null}
         
-          {menu && menu.length === 1 ?
-            <span className='create_sign_account '> <a href='#' className='G_smallerFont oneMenu '>{menu}</a></span> : 
+          {
+            menu[0] === 'Log In to an Existing Account' && menu.length === 1 ?
+          <span className='create_sign_account '> <NavLink  exact={true} to="/SignIn" activeClassName="is-active" className='G_smallerFont oneMenu '>{menu}</NavLink></span> : undefined 
+          }
+
+          {
+            menu[0] === 'Create a New Account' && menu.length === 1 ?
+          <span className='create_sign_account '> <NavLink  exact={true} to="/SignUp" activeClassName="is-active" className='G_smallerFont oneMenu '>{menu}</NavLink></span> : undefined
+          }
+        
+          {
+            menu && menu.length != 1 ?
             (<ul className='listItems G_smallestFont '> 
-              <li><a href='#' ><span >< IoIosHome /></span>{menu[0]}</a></li> 
-              <li><a href='#' ><span ><FaUpload /></span>{menu[1]}</a></li> 
-              <li><a href='#' ><span ><IoMdNotifications /></span>{menu[2]}</a></li>
-              <li><a href='#' ><span ><FaList /></span>{menu[3]}</a></li>
-            </ul>)
+              <li><a href='#' ><span  className='G_smallerFont'><FaUpload /></span>{menu[0]}</a></li> 
+              <li><a href='#' ><span  className='G_smallerFont'><IoMdNotifications /></span>{menu[1]}</a></li>
+              <li><a href='#' ><span  className='G_smallerFont'><FaList /></span>{menu[2]}</a></li>
+              <li><a href='#' ><span  className='G_smallerFont'><IoMdCart/></span>{menu[3]}</a></li>
+            </ul>): undefined
           }
 
         </div>

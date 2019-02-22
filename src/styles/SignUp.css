@@ -9,7 +9,7 @@
 .SignUpForm_container {
   padding: 2% 5%;
 }
-Input {
+.input {
   width: 100%;
   border: none;
   border-bottom: 1px solid rgb(49, 49, 71);
@@ -18,14 +18,14 @@ Input {
   padding: 0 0 0 5px ;
   box-sizing: border-box;
 }
-.btnDiv button{
+.btnDiv *{
   margin: 0 10px
 }
 .In_Up_iconPosition{
   top: 10%;
   left: 4%;
   right: 0%;
-  font-size: 30px ;
+  font-size: 25px ;
   z-index: 2;
 }
 

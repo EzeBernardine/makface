@@ -1,8 +1,11 @@
 
 .profile_container {
-  padding:  10px ;
-  display: grid;
-  height: 95%;
+  position: relative;
+}
+.profileDiv{
+  padding:  15px;
+  display: grid; 
+  height: fit-content;
 }
 .ImgDiv {
   height: 100px;
@@ -10,14 +13,35 @@
   left: 0;
   right: 0;
   position: relative;
-  
 }
-.imgOverlay {
+.img {
   border-radius: 50%;
   height: 100px;
   background-color:rgb(49, 49, 71);
   width: 100px;
   position: absolute;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  border-radius: 50%;
+  opacity: 0;
+  background-color:  rgba(49, 49, 71, .5);
+
+}
+.overlay:hover {
+  opacity: 1;
+}
+.profileImage {
+  position: absolute;
+  color: #e3e5ea;
+  padding: 0;
+  margin:  auto auto;
+  width: 15px;
+  height: 15px;
+
 }
 .ImgDiv img{
   max-width: 100%; 
@@ -41,10 +65,8 @@
 }
 .seller_Buyer {
   color:  rgb(96, 209, 96);
-  border-radius: 2px;
   padding: 2px 5px;
   margin: 0 3px 0 0;
-  background-color: #f7f7f8;
 }
 .nationality h3{
   padding: 0;
@@ -55,12 +77,14 @@
 }
 
 .profile_Name {
-  margin: 5px 0;
   width: 100%;
   height: 40px;
   font-weight: bold;
   box-sizing: border-box;
   word-wrap: break-word;
+}
+.profile_Name a{
+  /* color: black; */
 }
 .p_font {
   font-size: 10px
@@ -89,20 +113,24 @@
   padding: 3px 5px
 }
 .eachData span{
-  color: rgb(49, 49, 71);
   padding-left: 5px
+}
+.footer {
+  align-self: flex-end;
 }
 .location {
   grid-gap: 10px;
-  margin: 10px 0
+  justify-content: flex-start;
+  margin: 10px 0;
+  padding: 3px;
+  border-bottom: 1px solid rgba(49, 49, 71, .3);
 }
 .location h3 , .locatio span{
   padding: 0;
-  margin: 0
+  margin: 0;
 }
 .socialMedia {
-  align-self: flex-end;
-  grid-gap: 5px
-}
-.socialMedia span{
+  display: flex;
+  grid-gap: 5px;
+  justify-content: flex-start;
 }

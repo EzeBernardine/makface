@@ -31,6 +31,16 @@ p, h1, input {
 .G_padContainer {
   padding: 20px 
 }
+.G_Position {
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+.G_roundContainer {
+  height: 100%;
+  width: 100%;
+}
 
 /* Text */
 .G_centerTx {
@@ -39,11 +49,17 @@ p, h1, input {
 .G_smallestFont {
   font-size: 14px;
 }
+.G_tooSmallFont {
+  font-size: 12px;
+}
+.G_tooSmallerFont {
+  font-size: 10px;
+}
 .G_smallerFont {
-  font-size: 17px;
+  font-size: 16px;
 }
 .G_subHeaderFont {
-  font-size: 20px
+  font-size: 18px
 }
 .G_biggestFont {
   font-size: 30px
@@ -54,8 +70,8 @@ p, h1, input {
 .G_SubHeaderLineHeight {
   line-height: 3rem
 }
-.G_DngerText {
-  /* color: rgb(173, 2, 2) */
+.G_offCol {
+  color:  rgb(96, 209, 96);
 }
 .G_SmallerFontStyle{
   font-family: 'Lora', serif;
@@ -69,14 +85,16 @@ p, h1, input {
 /* Buuton */
 .G_Btn {
   border: 0;
-  padding: 7px 10px;
+  padding: 5px 8px;
   background-color: rgb(49, 49, 71);
+  /* background-color: rgba(49, 49, 71, .8); */
   color: #e3e5ea;
   border-radius: 5px;
-  margin: 10px 0;
+  /* margin: 10px 0; */
   opacity: .8;
 }
 .G_Btn:hover {
+  /* background-color: rgb(49, 49, 71); */
   opacity: 1;
 }
 .G_bigBtn {
@@ -90,6 +108,30 @@ p, h1, input {
   font-size: 16px
 }
 
+/* color */
+.G_dkBck {
+  background-color: rgb(49, 49, 71);
+}
+.G_lgtBck {
+  background-color: #f7f7f8;
+}
+.G_lgterBck {
+  background-color: rgb(64, 64, 87);
+}
+.G_BCol {
+  color: rgba(49, 49, 71, .8);
+}
+.G_WCol {
+  color: #e3e5ea;
+}
+
+/* border */
+.G_smBoda{
+  border-radius: 2px;
+}
+.G_bigBoda{
+  border-radius: 2px;
+}
 
 /* Logo */
 .G_logoDiv {
@@ -109,11 +151,13 @@ p, h1, input {
   height: 10vh ;
   width: 10vh ;
 }
+@import url('https://fonts.googleapis.com/css?family=Hind+Vadodara|ZCOOL+QingKe+HuangYou');
 .G_logoIcon {
   color: #e3e5ea;
   transform: rotate(-45deg);
-  /* font-size: 150px; */
-  padding: 0 0 0 0px
+  padding: 0 0 0 0px;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-family: 'Hind Vadodara', sans-serif;
 }
 
 /* Menu */
