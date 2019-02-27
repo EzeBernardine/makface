@@ -1,10 +1,9 @@
-.SearchBar_Container:focus {
-  background: green
+.SearchBar_Container {
 }
 .SearchInput_Container {
   width: 100%;
   box-sizing: border-box;
-  height: 70%;
+  height: 100%;
   border-radius: 25px ;
   background-color:#f7f7f8;
   border: 1px solid rgba(49, 49, 71, .2);

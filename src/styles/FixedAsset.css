@@ -1,0 +1,51 @@
+
+
+.FixedAsset_main {
+  display: grid;
+  height: 95%;
+  width: 95%;
+  margin: 10px auto 
+}
+.FixedAsset_container {
+  border-bottom: 1px solid  rgba(64, 64, 87, .3);
+  height: fit-content;
+  position: relative;
+  justify-content: flex-start;
+  align-content: center
+}
+.FixedAsset_img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.FixedAsset_comment {
+  font-weight: bold
+}
+.FixedAsset_location {
+  color: red
+}
+.FixedAsset_buttonDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.FixedAsset_buttonDiv:hover {
+  opacity: 1;
+}
+.FixedAsset_button {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.FisedAsset_viewMore {
+  align-self: flex-end;
+  justify-self: center;
+  width: fit-content
+}
+.FisedAsset_viewMore:hover {
+  text-decoration: underline
+}

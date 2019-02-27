@@ -11,7 +11,7 @@ import '../styles/Media.css';
 class Menu extends Component {
   render() {
     
-    let {name,menu} = this.props;
+    let {name,menu, handleHomeDisplay,handleCartDisplay} = this.props;
     
     return (
       <div className='menu_Container G_flex G_middle G_Menu'>
@@ -33,10 +33,10 @@ class Menu extends Component {
           {
             menu && menu.length != 1 ?
             (<ul className='listItems G_smallestFont '> 
-              <li><a href='#' ><span  className='G_smallerFont'><FaUpload /></span>{menu[0]}</a></li> 
+              <li onClick={handleHomeDisplay}><a href='#' ><span  className='G_smallerFont'><IoMdNotifications /></span>{menu[0]}</a></li>
               <li><a href='#' ><span  className='G_smallerFont'><IoMdNotifications /></span>{menu[1]}</a></li>
               <li><a href='#' ><span  className='G_smallerFont'><FaList /></span>{menu[2]}</a></li>
-              <li><a href='#' ><span  className='G_smallerFont'><IoMdCart/></span>{menu[3]}</a></li>
+              <li onClick={handleCartDisplay}><a href='#' ><span  className='G_smallerFont'><IoMdCart/></span>{menu[3]}</a></li>
             </ul>): undefined
           }
 

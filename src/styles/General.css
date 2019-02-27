@@ -121,6 +121,9 @@ p, h1, input {
 .G_BCol {
   color: rgba(49, 49, 71, .8);
 }
+.G_dBCol {
+  color: rgb(49, 49, 71);
+}
 .G_WCol {
   color: #e3e5ea;
 }
@@ -130,7 +133,7 @@ p, h1, input {
   border-radius: 2px;
 }
 .G_bigBoda{
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 /* Logo */

@@ -4,60 +4,43 @@
 }
 
 .NewsFeed_Container {
+  padding: 2% 5%;
   position: relative;
   /* height: fit-content; */
   display: grid;
   grid-gap: 10px;
-  /* margin: 50px  */
-}
-.NewsFeed_ProfileName {
+  border-bottom: 5px solid  rgba(49, 49, 71, .1);
 }
 .NewsFeed_ProfileAnchor {
-  justify-content: flex-start;
-  grid-gap: 10px;
-  background: blue
+  position: relative;
+  align-items: center;
 }
 .NewsFeed_ProfileImage {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 3px solid  rgb(49, 49, 71);
 }
 .name_Date {
+  margin-left: 10px;
+}
+.name_Date p{
+  font-weight: bold
+}
+.name_Date span{
+  opacity: .5;
+  font-size: 12px
 }
 .dropDownIcon {
-  /* position: absolute; */
-  /* right: 0px;
-  top: 0; */
   padding: 10Px;
-  background: red;
-  /* justify-self: flex-end */
-}
-.dropDownArrow {
-  position: absolute;
-  height: 13px;
-  width: 13px;
-  background-color: white;
-  border-top: 1px solid rgba(49, 49, 71, .2);
-  border-left: 1px solid rgba(49, 49, 71, .2);
-  top: -7px;
-  left: 10px;
-  transform: rotate(45deg)
+  margin-left:  auto;
 }
 .dropDown {
   z-index: 2;
   background-color: white;
   box-shadow: 0px 0px  2px 0 rgba(49, 49, 71, .5);
   position: absolute;
-  left: -9px;
-  top: 35px;
+  right: -135px;
   border-radius: 5px;
-}
-.dropDown_dontDispaly {
-  display: none;
-}
-.dropDown_Dispaly {
-  display: block;
 }
 .dropDown ul{
   padding: 0;
@@ -68,9 +51,18 @@
   padding: 5px 15px;
 }
 .dropDown li:hover{
-  color: white;
-  background-color: rgba(49, 49, 71, .7);
-  /* background-color: #ededf6; */
+  background-color: #ededf6;
+}
+.NewsFeed_Images {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.NewsFeed_Image {
+  min-height: 400px;
+  max-height: 400px;
+  width: auto;
+  margin: 0 auto 
 }
 .soldUnsold {
   height: 30px;
@@ -79,28 +71,17 @@
   top: 0;
   right: 0;
   color: white;
-  font-size: 10px;
   font-weight: bold;
-  z-index: 1;
   background-color: red
 }
-
-.NewsFeed_Comment{
-  position: relative;
-
+.NewsFeed_Linkings {
+  justify-content: space-evenly;
+  border-top: 1px solid  rgba(49, 49, 71, .1);
 }
-.NewsFeed_Images {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top: 0;
-  bottom:  0;
-  left:  0;
-  right:  0;
+.NewsFeed_Linkings div{
+  padding: 10px ;
+  opacity: .8;
 }
-.NewsFeed_Image {
-  z-index: 0;
-  width: 100%;
-  position: relative;
-  top: 0
+.NewsFeed_Linkings div:hover{
+  opacity: 1;
 }

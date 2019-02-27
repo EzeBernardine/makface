@@ -10,56 +10,64 @@ import '../styles/IconFooter.css'
 
 
 class Chart extends Component {
-    state={
-    cartDisplay: undefined
-  };
-  handleCartDisplay = ()=>  this.setState(prevState => (
-      {cartDisplay: !prevState.cartDisplay}
-    ))
+   
   
   render() {
     let chart  = [
       {
         img: require('../image/dress.jpg'),
+        name: 'Red gown',
         seller: 'Bern',
         Location: 'learnfacory',
-        price: 3000
+        price: 3000,
+        sold:  true
       },
       {
         img: require('../image/shoe.jpeg'),
+        name: 'Black Shoe',
         seller: 'chidera',
         Location: 'Aba No 2 Okoroama Street',
-        price: 9000
+        price: 9000,
+        sold:  false
       },
       {
         img: require('../image/bag.jpeg'),
+        name: 'Ash school bag',
         seller: 'George',
         Location: 'umuahia',
-        price: 5000
+        price: 5000,
+        sold:  false
       },
       {
         img: require('../image/bag.jpeg'),
+        name: 'Ash school bag',
         seller: 'George',
         Location: 'umuahia',
-        price: 5000
+        price: 5000,
+        sold:  true
       }
     ]
     return (
       <div className='Cart_main'>
-        <p className=' G_WCol G_smallestFont cart' onClick={this.handleCartDisplay}>Cart <span><IoMdCart/></span></p>
+        <p className=' G_dBCol G_subHeaderFont cart'>Cart <span><IoMdCart/></span></p>
 
-        {this.state.cartDisplay &&
-          chart.map((item) =>(
-            <div className=' G_flex G_WCol G_lgterBck G_middle cart_container G_smBoda'>
-              <img src={item.img} className='cartImage flexRight'></img>
+        {chart.map((item) =>(
+            <div className=' G_flex cart_container G_smBoda'>
+              <div className='flexRight G_flex'><img src={item.img} className='cartImage'></img> </div>
+
               <div className='flexLeft'>
-                <p className='G_tooSmallFont'>Seller: <span className='G_tooSmallerFont'>{item.seller}</span></p>
-                <p className='G_tooSmallFont'>Location <span className='G_tooSmallerFont'>{item.Location}</span></p>
-                <p className='G_tooSmallFont price'>Price: <span className='G_tooSmallerFont G_offCol'>{item.price}</span></p>
+                <p className='G_smallerFont'>{item.name}</p>
+                <div className='G_flex location_price G_tooSmallFont'>
+                  <p><span  className='priceFontWeight'>Seller: </span><p>{item.seller}</p></p>
+                  <p><span  className='priceFontWeight'>Location: </span><p>{item.Location}</p></p>
+                  <p className='priceFontWeight'>Price: <p className='G_offCol'>{item.price}</p></p>
+                </div>
               </div>
+
+              {item.sold ? <div className='soldUnsold G_flex G_middle G_tooSmallerFont'>Sold</div> : undefined}
               
               <div className='cartOverlay'>
-                <a href='#' className='eachCartImage G_WCol'> <IoMdTrash /> </a>
+                <a href='#' className=' G_BCol cartTrash'> <IoMdTrash /> </a>
               </div>
             </div>
             )

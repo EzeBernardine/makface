@@ -30,11 +30,11 @@ class ProductsCategories extends Component {
     ]
     return (
       <div className='ProductsCategories_main'>
-        <h className='G_WCol G_smallestFont products'>Product Categories</h>
+        <h1 className='G_dBCol G_smallestFont products'>Product Categories</h1>
           
         {
           products.map((product) =>(
-            <ul className='  G_WCol   products_container G_smBoda'>
+            <ul className='  G_dBCol   products_container G_smBoda'>
               <li className='G_tooSmallFont'>{product.name}</li>
             </ul>
             )
