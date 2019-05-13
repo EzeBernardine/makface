@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import { IoMdHeart, IoIosPin, IoLogoWhatsapp, IoLogoTwitter } from "react-icons/io";
 import { FaUpload, FaComment, FaUsers, FaFacebookF, FaCamera, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import NewsFeed from './NewsFeed'
-import Form from '../component/Form'
 import '../styles/FullProfile.css';
 import '../styles/General.css';
 import '../styles/Media.css';
@@ -32,6 +31,7 @@ class FullProfile extends Component {
         displayPersonal: true
       }
     ))
+    
   }
   handlePEditButton = () => {
     this.setState(prevState => (
@@ -58,61 +58,6 @@ class FullProfile extends Component {
       shopLocation: 'nmcdf street',
       shopPhone: '000000000000',
       shopSite: 'www.prideofabia.com'
-    }
-
-    let formDatas = {
-      personalSettings: [
-        {
-          value: `${productsData.name}`,
-          key: 'Name '
-        },
-        {
-          value: `${productsData.gender}`,
-          key: 'Gender'
-        },
-        {
-          value: `${productsData.age}`,
-          key: 'Age'
-        },
-        {
-          value: `${productsData.religion}`,
-          key: 'Religion'
-        },
-        {
-          value: `${productsData.address}`,
-          key: 'Address'
-        },
-        {
-          value: `${productsData.country}`,
-          key: 'Country'
-        },
-        {
-          value: `${productsData.state}`,
-          key: 'State:'
-        },
-        {
-          value: `${productsData.phone}`,
-          key: 'Personal Contact'
-        },
-      ],
-      shopSettings: [
-        {
-          key: 'Shop Contact: ',
-          value: `${productsData.shopPhone}`
-        },
-        {
-          key: 'Shop website: ',
-          value: `${productsData.shopSite}`
-        },
-        {
-          key: 'Shop Location: ',
-          value: `${productsData.shopLocation}`
-        },
-        {
-          key: "SHop's url: ",
-          value: `${productsData.shopSite}`
-        },
-      ]
     }
 
     let { } = this.props;
@@ -169,23 +114,37 @@ class FullProfile extends Component {
               {
                 this.state.displayPersonal &&
                 <div class='fullProfile_personalSettings fullProfile_settings G_smallestFont'>
-                  <Form formDatas={formDatas.personalSettings} />
+                  <p><span> Name: </span><span className='edit'>{productsData.name}</span></p>
+                  <p><span> Gender:</span><span className='edit'>{productsData.gender}</span></p>
+                  <p><span> Age:</span><span className='edit'>{productsData.age}</span></p>
+                  <p><span> Religion:</span><span className='edit'>{productsData.religion}</span></p>
+                  <p><span>Address: </span><span className='edit'>{productsData.address}</span></p>
+                  <p><span> Country:</span><span className='edit'>{productsData.country}</span></p>
+                  <p><span> State:</span><span className='edit'>{productsData.state}</span></p>
+                  <p><span>Personale Contact:</span><span className='edit'>{productsData.phone}</span></p>
+
                 </div>
               }
 
               {
                 this.state.displayShop &&
                 <div class='fullProfile_shopSettings fullProfile_settings G_smallestFont'>
-                  <Form formDatas={formDatas.shopSettings} />
-                  <p><span>Shop Front View</span><input type='file' /></p>
+                  <p><span>Shop Contact:</span><span className='edit'>{productsData.shopPhone}</span> </p>
+                  <p><span>Shop website:</span><span className='edit'>{productsData.shopSite}</span> </p>
+                  <p><span>Shop Location:</span><span className='edit'>{productsData.shopLocation}</span></p>
+                  <p><span>SHop's url: </span><span className='edit'>{productsData.shopSite}</span> </p>
+                  <p><span>Shop Front View:</span><input type='file' /></p>
                   <p><span>Allow people a DM me?</span><span><input type='checkbox' /></span> </p>
                 </div>
               }
+                <div className={'fullProfile_settings'}>
               {
-                this.state.edit ?
-                  (<button className='G_Btn G_smallBtn' onClick={this.handlePEditButton}>Edit</button>) :
-                  (<button className='G_Btn G_smallBtn' onClick={this.handlePEditButton}>Save</button>)
+                this.state.edit ? 
+
+                (<button className='G_Btn G_smallBtn' onClick={this.handlePEditButton}>Edit</button>) : 
+                (<button className='G_Btn G_smallBtn' onClick={this.handlePEditButton}>Save</button>)
               }
+              </div>
             </div>
           </div>
 

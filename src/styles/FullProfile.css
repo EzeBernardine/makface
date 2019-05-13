@@ -110,16 +110,30 @@
   justify-self: center
 }
 .fullProfile_settngsSubDiv {
-  margin: 10px
+  margin: 5px auto;
+  width: 100%;
+
 }
 .fullProfile_settings_header h2{
   flex: 1;
   margin: 0;
   text-align: center;
+  cursor: pointer;
+  /* border-bottom: 3px solid  rgb(96, 209, 96); */
+}
+.fullProfile_settings_header {
+  /* border-bottom: 3px solid  rgb(96, 209, 96); */
+  flex: 1;
+  margin: 15px 0;
+}
+.fullProfile_settings_header h2:nth-child(1){ 
+  transform: translateX(-22px);
   border-bottom: 3px solid  rgb(96, 209, 96);
 }
 .fullProfile_settings {
-  margin: 20px 
+  margin: 20px auto; 
+  width: 75%;
+
 }
 .fullProfile_settings p{
   display: flex;
@@ -132,7 +146,8 @@
   flex: 2;
 }
 .fullProfile_settings .edit{
-  border: 0;
-  border-bottom: 1px solid  rgba(64, 64, 87, .7);
-  font-size: 12px
+  padding: 3px;
+  border: 1px solid  rgba(64, 64, 87, .1);
+  font-size: 12px;
+  background-color: #f7f7f8
 }
