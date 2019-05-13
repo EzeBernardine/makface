@@ -1,0 +1,14 @@
+
+.form_Container{
+  width: 100%;
+  font-family: 'Hind Vadodara', sans-serif;
+}
+.form_main {
+  display: flex;
+}
+.form_main p:nth-child(1) {
+  flex: 1
+}
+.form_main p:nth-child(2) {
+  flex: 2
+}

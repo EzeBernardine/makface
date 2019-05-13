@@ -68,10 +68,13 @@ class Menu extends Component {
 
   {/* Location visible to only  other viewers */}
           <div className='footer'>
-            {user ?<div className='location p_font G_flex G_middle G_dBCol'>
-                <h3 className='profieIconSize'>Shop  Address:</h3>
-                <span>No 5 Igbekwe Street </span>
-            </div> : undefined}
+            {
+              user ?
+              <div className='location p_font G_flex G_middle G_dBCol'>
+                  <h3 className='profieIconSize'>Shop  Address:</h3>
+                  <span>No 5 Igbekwe Street </span>
+              </div> : undefined
+            }
 
            
           </div>
