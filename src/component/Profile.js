@@ -11,6 +11,8 @@ import '../styles/IconFooter.css'
 
 class Menu extends Component {
   render() {
+
+    let {} = this.props;
     let user  = true
     return (
       <div className='profile_container '>
@@ -21,7 +23,7 @@ class Menu extends Component {
               <img src={require('../image/images.jpeg')} />
               <div className='overlay'>
                 <a href='\' className='profileImage G_Position'><FaCamera /></a>
-              </div>
+              </div> 
             </a>
 
             <div className='seller_BuyerDiv'>
@@ -43,7 +45,7 @@ class Menu extends Component {
           </div>
 
           <div className='profile_Name  G_smallerFont G_dBCol'>
-            <a href='#' className='G_dBCol'>Kings Nduka</a>
+            <a href='#' className='G_dBCol' onClick={this.props.handleFullProfileDisplay}>Kings Nduka</a>
             <p className='profile_UserName p_font '>KingsNduka</p>
           </div>
 
@@ -71,10 +73,7 @@ class Menu extends Component {
                 <span>No 5 Igbekwe Street </span>
             </div> : undefined}
 
-            <div className='socialMedia G_flex profieIconSize icons'>
-              <span><IoLogoWhatsapp /></span> <span><FaFacebookF/></span> 
-              <span><IoLogoTwitter /></span> 
-            </div>
+           
           </div>
 
 

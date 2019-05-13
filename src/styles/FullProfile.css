@@ -1,0 +1,138 @@
+
+
+.FullProfile_container {
+  margin:  0
+}
+
+.shopDiv {
+  position: relative;
+  display: grid;
+  width: 70%;
+  margin: 20px auto;
+  box-shadow:  inset 0 0 10px rgba(49, 49, 71, .2);
+  border: 1px solid rgba(49, 49, 71, .1);
+  background-color: rgba(49, 49, 71, .1);
+}
+
+.fullProfile_shopImg {
+  width: 100%;
+  height: auto
+}
+.fullProfileImg {
+  height: 200px;
+  width: 200px;
+}
+.fullProfile_shopName {
+  display: flex;
+  margin: 5px 0 0 50% ;
+  align-items: center;
+}
+.fullProfile_shopName span{
+  margin-left: 10px;
+}
+.fullProfile_join {
+  margin: 10px 0;
+  border-radius: 2px;
+}
+.fullProfile_about{
+  margin: 10px 0;
+}
+.fullProfile_about p{
+  display: flex;
+
+  line-height: 1.6rem
+}
+.fullProfile_about  span {
+  flex: 1
+}
+.fullProfile_about span:first-child {
+  font-weight: bold
+}
+.fullProfiledata {
+  top: -105px;
+  position: relative;
+  display: flex;
+  width: 80%;
+  height: fit-content;
+  grid-gap: 50px;
+  justify-self: center
+}
+.fullProfile_personal {
+  width: fit-content;
+  position: relative; 
+  box-shadow: 0px 10px 10px 1px rgba(64, 64, 87, .2);
+  height: fit-content;
+  background: white;
+}
+.fullProfile_personal_main {
+  padding: 10px;
+}
+.fullProfile_shopData{
+  position: relative;
+  height: fit-content;
+  box-shadow: 0px 10px 10px 1px rgba(64, 64, 87, .2);
+  padding: 10px;
+  background: white;
+  top: 155px;
+  width: fit-content;
+
+
+}
+.fullProfile_fold {
+  position: absolute;
+  bottom:  -25px;
+  width: 60px;
+  height: 65px;
+  right: -15px;
+  background-color:  rgb(232, 232, 238);
+}
+.fullProfile_fold div{
+  width: 45px;
+  height: 40px;
+  background: linear-gradient(to bottom right, 
+  rgba(49, 49, 71, .1) 25%,rgba(49, 49, 71, .1) 25%, rgba(49, 49, 71, .3) 50%,
+  rgba(49, 49, 71, .1) 25%, 
+  transparent 50%);
+}
+
+
+
+
+
+
+
+.fullProfile_settingsDiv{
+  position: relative;
+  background: white;
+  top: -50px;
+  margin-bottom: 20px;
+  width: 80%;
+  justify-self: center
+}
+.fullProfile_settngsSubDiv {
+  margin: 10px
+}
+.fullProfile_settings_header h2{
+  flex: 1;
+  margin: 0;
+  text-align: center;
+  border-bottom: 3px solid  rgb(96, 209, 96);
+}
+.fullProfile_settings {
+  margin: 20px 
+}
+.fullProfile_settings p{
+  display: flex;
+  margin: 10px 0px
+}
+.fullProfile_settings span:nth-child(1) {
+  flex: 1
+}
+.fullProfile_settings span:nth-child(2) {
+  flex: 2;
+}
+.fullProfile_settings .edit{
+  border: 0;
+  border-bottom: 1px solid  rgba(64, 64, 87, .7);
+  font-size: 12px
+}

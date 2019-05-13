@@ -22,7 +22,6 @@ body {
 
 /* Containers */
 .dashboard_Container {
-  background: red
 }
 .Menu {
   z-index: 5;
@@ -74,3 +73,9 @@ body {
   height: fit-content
 }
 
+.FullProfile {
+  width: 100%;
+  height: fit-content;
+  background: white;
+  position: absolute;
+}

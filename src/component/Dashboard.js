@@ -10,20 +10,38 @@ import LoadNew from './LoadNew';
 import NewsFeed from './NewsFeed';
 import Advert from './Advert';
 import FixedAsset from './FixedAsset';
+import FullProfile from './FullProfile';
 import '../styles/Media.css';
 
 export default class Dashboard extends Component {
   state={
+    profile:  true,
     cartDisplay: undefined,
     homeDisplay: undefined,
+    fullProfileDisplay: undefined,
   };
   handleCartDisplay = ()=>  this.setState(prevState => (
-      {cartDisplay: true}
+      {
+        profile:  true,
+        cartDisplay: true
+      }
     ))
   handleHomeDisplay = ()=>  this.setState(prevState => (
-      {cartDisplay : false,
-        homeDisplay: true}
+      {
+        profile:  true,
+        cartDisplay : false,
+        fullProfileDisplay: false,
+        homeDisplay: true
+      }
     ))
+  handleFullProfileDisplay = () => this.setState(prevState => (
+    {
+      cartDisplay : false,
+      homeDisplay: false,
+      profile: false,
+      fullProfileDisplay: true,
+    }
+  ))
  
   multiDisplay = (e)=> { 
   // Handling searchInput box-shadow
@@ -37,27 +55,34 @@ export default class Dashboard extends Component {
   render() {
     let makface = ['Makface' ]
     let menu = [ 'Home', 'Notification', 'List of Shops', 'Cart'];
-    let {cartDisplay} = this.state
+    let {profile, cartDisplay, fullProfileDisplay} = this.state
 
 
     return (
       <div className='dashboard_Container' onClick={this.multiDisplay} >
         <div className='Menu G_smallerFont '><Menu menu = {menu} name = {makface} handleCartDisplay = {this.handleCartDisplay} handleHomeDisplay={this.handleHomeDisplay}/></div>
         
-        <div className='Profile'>
-          <Profile />
-          <ProductsCategories />
-        </div>
+        {
+          profile && 
+          <div className='Profile'>
+            <Profile handleFullProfileDisplay={this.handleFullProfileDisplay}/>
+            <ProductsCategories />
+          </div>
+        }
 
-        <div className='sub_dashboard_Container'>
+       
+       
         {
           cartDisplay ? 
-          <div className='displayedUpMenu'>
+          <div className='displayedUpMenu sub_dashboard_Container'>
             <div className='Searchbar centerContent '> <SearchBar /> </div>
             <Cart handleCartDisplay ={this.handleCartDisplay}/>
           </div>
-           :
-           <div>
+        :
+          fullProfileDisplay ?
+            <div className='FullProfile'><FullProfile /></div>
+        :
+           <div className='sub_dashboard_Container'>
             <div className='shop_advert G_flex'>
               <div className='Advertisment'><Advert /></div>
               <div className='Assets '><FixedAsset /></div>
@@ -70,7 +95,7 @@ export default class Dashboard extends Component {
           </div>
         }
 
-        </div>
+
       </div>
     );
   }
