@@ -71,7 +71,7 @@
   position: relative;
   height: fit-content;
   box-shadow: 0px 10px 10px 1px rgba(64, 64, 87, .2);
-  padding: 10px;
+  padding: 10px 20px;
   background: white;
   top: 155px;
   width: fit-content;
@@ -104,7 +104,7 @@
 .fullProfile_settingsDiv{
   position: relative;
   background: white;
-  top: -50px;
+  top: 105px;
   margin-bottom: 20px;
   width: 80%;
   justify-self: center
@@ -114,40 +114,46 @@
   width: 100%;
 
 }
-.fullProfile_settings_header h2{
-  flex: 1;
-  margin: 0;
-  text-align: center;
-  cursor: pointer;
-  /* border-bottom: 3px solid  rgb(96, 209, 96); */
-}
 .fullProfile_settings_header {
-  /* border-bottom: 3px solid  rgb(96, 209, 96); */
-  flex: 1;
-  margin: 15px 0;
+  margin: 20px 0;
 }
-.fullProfile_settings_header h2:nth-child(1){ 
-  transform: translateX(-22px);
+.fullProfile_settings_header > div{
+  flex: 1;
+  text-align: center;
+}
+.fullProfile_settings_header div h2{
+  cursor: pointer;
+  display: inline-block;
+  padding: 2px ;
+}
+.fullProfile_settings_header div:nth-child(1){ 
+  /* transform: translateX(-22px); */
   border-bottom: 3px solid  rgb(96, 209, 96);
 }
 .fullProfile_settings {
-  margin: 20px auto; 
-  width: 75%;
+  margin: 30px auto; 
+  width: 80%;
 
 }
 .fullProfile_settings p{
   display: flex;
-  margin: 10px 0px
+  margin: 10px 0px;
 }
-.fullProfile_settings span:nth-child(1) {
+.fullProfile_settings p span:nth-child(1) {
   flex: 1
 }
-.fullProfile_settings span:nth-child(2) {
+.fullProfile_settings p span:nth-child(2) {
   flex: 2;
 }
 .fullProfile_settings .edit{
   padding: 3px;
   border: 1px solid  rgba(64, 64, 87, .1);
   font-size: 12px;
-  background-color: #f7f7f8
+  background-color: #f7f7f8;
+  opacity: .6;  
+  display: block;
+  width: 70%
+}
+.fullProfile_settings .number{
+  width: 50%
 }

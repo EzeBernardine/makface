@@ -31,7 +31,7 @@ class FullProfile extends Component {
         displayPersonal: true
       }
     ))
-    
+
   }
   handlePEditButton = () => {
     this.setState(prevState => (
@@ -54,13 +54,14 @@ class FullProfile extends Component {
       shopName: 'PrideOfAbia',
       shopImg: require('../image/images.jpeg'),
       shopYear: '1998',
-      aboutShop: "Hey-o! I created D3, a popular open-source JavaScript library for visualizing data. Until recently, I was also a graphics editor for The New York Times, where I helped produce a variety of data visualizations (such as Is It Better to Rent or Buy? and 512 Paths to the White House), maps (The Most Detailed Maps You’ll See From the Midterm Elections), and articles (A Game of Shark and Minnow). I write occasionally (Visualizing Algorithms, How To Scroll). You can see more of my work on my website and Twitter",
+      aboutShop: "Hey-o! I created D3, a popular open-source JavaScript library for visualizing data. Until recently, I was also a graphics editor for The New York Times, where I helped produce a variety of data visualizations (such as Is It Better to Rent or Buy? and 512 Paths to the White House), maps (The Most Detailed Maps You’ll See From the Midterm Elections), and articles (A Game of Shark and Minnow). I write occasionally (Visualizing Algorithms, How To Scroll). You can see more of my work on my website and TwitterI was also a graphics editor for The New York Times, where I helped produce a variety of data visualizations (such as Is It Better to Rent or Buy? and 512 Paths to the White House), maps (The Most Detailed Maps You’ll See From the Midterm Elections), and articles (A Game of Shark and Minnow). I was also a graphics editor for The New York Times, where I helped produce a variety of data visualizations (such as Is It Better to Rent or Buy? and 512 Paths to the White House), maps (The Most Detailed Maps You’ll See From the Midterm Elections), and articles (A Game of Shark and Minnow). I was also a graphics editor for The New York Times, where I helped produce a variety of data visualizations (such as Is It Better to Rent or Buy? and 512 Paths to the White House), maps (The Most Detailed Maps You’ll See From the Midterm Elections), and articles (A Game of Shark and Minnow). I was also a graphics editor for The New York Times, where I helped produce a variety of data visualizations (such as Is It Better to Rent or Buy? and 512 Paths to the White House), maps (The Most Detailed Maps You’ll See From the Midterm Elections), and articles (A Game of Shark and Minnow). " ,
       shopLocation: 'nmcdf street',
       shopPhone: '000000000000',
       shopSite: 'www.prideofabia.com'
     }
 
     let { } = this.props;
+    let { edit, displayPersonal, displayShop } = this.state;
     return (
       <div className='FullProfile_container'>
         <div className='shopDiv'>
@@ -85,10 +86,7 @@ class FullProfile extends Component {
                   <p><span>State: </span><span>Enugu</span></p>
                   <p><span>Phone Number: </span><span>{productsData.phone}</span></p>
                 </div>
-                <div className='socialMedia G_flex profieIconSize icons'>
-                  <span><IoLogoWhatsapp /></span> <span><FaFacebookF /></span>
-                  <span><IoLogoTwitter /></span>
-                </div>
+
               </div>
             </div>
 
@@ -99,6 +97,15 @@ class FullProfile extends Component {
                 <p><span><FaMapMarkerAlt /> Location: </span><span>Ibgekwe Street</span></p>
                 <p ><span><FaPhone /> Call Us On </span><span>{productsData.shopPhone}</span></p>
                 <p ><span>Visite our site: </span><span><a href='#"'>{productsData.shopSite}</a></span></p>
+                <p>
+                  <span>Follow Us On:</span>
+                  <span>
+                    <span className='socialMedia  profieIconSize icons'>
+                      <span><IoLogoWhatsapp /></span> <span><FaFacebookF /></span>
+                      <span><IoLogoTwitter /></span>
+                    </span>
+                  </span>
+                </p>
               </div>
               <iv className='fullProfile_fold'><div></div></iv>
             </div>
@@ -108,42 +115,89 @@ class FullProfile extends Component {
           <div className='fullProfile_settingsDiv'>
             <div className='fullProfile_settngsSubDiv G_tooSmallFont'>
               <div className='fullProfile_settings_header G_flex '>
-                <h2 onClick={this.handlePersonalSettingsDisplay}>Personal Settings</h2>
-                <h2 onClick={this.handleShopSettingsDisplay}>Shop Settings</h2>
+                <div> <h2 onClick={this.handlePersonalSettingsDisplay}>Personal Settings</h2> </div>
+                <div> <h2 onClick={this.handleShopSettingsDisplay}>Shop Settings</h2>  </div>
               </div>
               {
-                this.state.displayPersonal &&
+                displayPersonal &&
                 <div class='fullProfile_personalSettings fullProfile_settings G_smallestFont'>
-                  <p><span> Name: </span><span className='edit'>{productsData.name}</span></p>
-                  <p><span> Gender:</span><span className='edit'>{productsData.gender}</span></p>
-                  <p><span> Age:</span><span className='edit'>{productsData.age}</span></p>
-                  <p><span> Religion:</span><span className='edit'>{productsData.religion}</span></p>
-                  <p><span>Address: </span><span className='edit'>{productsData.address}</span></p>
-                  <p><span> Country:</span><span className='edit'>{productsData.country}</span></p>
-                  <p><span> State:</span><span className='edit'>{productsData.state}</span></p>
-                  <p><span>Personale Contact:</span><span className='edit'>{productsData.phone}</span></p>
+                  <p>
+                    <span> Name: </span>
+                    <span><span className='edit' contentEditable={!edit} >{productsData.name}</span></span>
+                  </p>
+                  <p>
+                    <span> Country:</span>
+                    <span><span className='edit' contentEditable={!edit}>{productsData.country}</span></span>
+                  </p>
+                  <p>
+                    <span> State:</span>
+                    <span><span className='edit' contentEditable={!edit}>{productsData.state}</span></span>
+                  </p>
+                  <p>
+                    <span>Address: </span>
+                    <span><span className='edit' contentEditable={!edit}>{productsData.address}</span></span>
+                  </p>
+                  <p>
+                    <span> Religion:</span>
+                    <span><span className='edit' contentEditable={!edit}>{productsData.religion}</span></span>
+                  </p>
+                  <p>
+                    <span> Age:</span>
+                    <span> <span className='edit number' contentEditable={!edit}>{productsData.age}</span> </span>
+                  </p>
+                  <p>
+                    <span>Personale Contact:</span>
+                    <span> <span className='edit number' contentEditable={!edit}>{productsData.phone}</span> </span>
+                  </p>
+                  <p>
+                    <span> Gender:</span>
+                    <span >
+                      <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                      </select>
+                    </span>
+                  </p>
 
                 </div>
               }
 
               {
-                this.state.displayShop &&
+                displayShop &&
                 <div class='fullProfile_shopSettings fullProfile_settings G_smallestFont'>
-                  <p><span>Shop Contact:</span><span className='edit'>{productsData.shopPhone}</span> </p>
-                  <p><span>Shop website:</span><span className='edit'>{productsData.shopSite}</span> </p>
-                  <p><span>Shop Location:</span><span className='edit'>{productsData.shopLocation}</span></p>
-                  <p><span>SHop's url: </span><span className='edit'>{productsData.shopSite}</span> </p>
-                  <p><span>Shop Front View:</span><input type='file' /></p>
-                  <p><span>Allow people a DM me?</span><span><input type='checkbox' /></span> </p>
+                  <p>
+                    <span>Shop website:</span>
+                    <span><span className='edit' contentEditable={!edit}>{productsData.shopSite}</span></span>
+                  </p>
+                  <p>
+                    <span>Shop Location:</span>
+                    <span><span className='edit' contentEditable={!edit}>{productsData.shopLocation}</span></span>
+                  </p>
+                  <p>
+                    <span>Shop's url: </span>
+                    <span><span className='edit' contentEditable={!edit}>{productsData.shopSite}</span></span>
+                  </p>
+                  <p>
+                    <span>Shop Front View:</span>
+                    <span> <input type='file' className='edit number' /></span>
+                  </p>
+                  <p>
+                    <span>Shop Contact:</span>
+                    <span> <span className='edit number' contentEditable={!edit}>{productsData.shopPhone}</span> </span>
+                  </p>
+                  <p>
+                    <span>Allow people a DM me?</span>
+                    <span > <input type='checkbox' /></span>
+                  </p>
                 </div>
               }
-                <div className={'fullProfile_settings'}>
-              {
-                this.state.edit ? 
 
-                (<button className='G_Btn G_smallBtn' onClick={this.handlePEditButton}>Edit</button>) : 
-                (<button className='G_Btn G_smallBtn' onClick={this.handlePEditButton}>Save</button>)
-              }
+              <div className={'fullProfile_settings'}>
+                {
+                  edit ?
+                    (<button className='G_Btn G_smallBtn' onClick={this.handlePEditButton}>Edit</button>) :
+                    (<button className='G_Btn G_smallBtn' onClick={this.handlePEditButton}>Save</button>)
+                }
               </div>
             </div>
           </div>
