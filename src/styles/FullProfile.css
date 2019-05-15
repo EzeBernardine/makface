@@ -12,11 +12,36 @@
   box-shadow:  inset 0 0 10px rgba(49, 49, 71, .2);
   border: 1px solid rgba(49, 49, 71, .1);
   background-color: rgba(49, 49, 71, .1);
+  height: max-content
 }
 
+.fullProfile_shopOverLayDiv{
+  position: relative;
+}
 .fullProfile_shopImg {
   width: 100%;
-  height: auto
+  height: auto;
+}
+.fullProfile_FaCamera{
+  position: absolute;
+  color: #e3e5ea;
+  padding: 0;
+  font-size: 30px;
+  margin:  auto 20px 20px auto;
+  width: 30px;
+  height: 30px;
+
+}
+.fullProfile_shopOverLay{
+  width: 100%;
+  height: 99%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.238);
+  top: 0;
+  opacity: 0;
+}
+.fullProfile_shopOverLay:hover{
+  opacity: 1;
 }
 .fullProfileImg {
   height: 200px;
@@ -39,7 +64,7 @@
 }
 .fullProfile_about p{
   display: flex;
-
+  grid-gap: 30px;
   line-height: 1.6rem
 }
 .fullProfile_about  span {
@@ -49,12 +74,13 @@
   font-weight: bold
 }
 .fullProfiledata {
-  top: -105px;
+  /* top: -105px; */
   position: relative;
   display: flex;
   width: 80%;
   height: fit-content;
   grid-gap: 50px;
+  margin: 50px 0;
   justify-self: center
 }
 .fullProfile_personal {
@@ -63,6 +89,8 @@
   box-shadow: 0px 10px 10px 1px rgba(64, 64, 87, .2);
   height: fit-content;
   background: white;
+  top: -180px;
+
 }
 .fullProfile_personal_main {
   padding: 10px;
@@ -71,9 +99,9 @@
   position: relative;
   height: fit-content;
   box-shadow: 0px 10px 10px 1px rgba(64, 64, 87, .2);
-  padding: 10px 20px;
+  padding: 30px ;
   background: white;
-  top: 155px;
+  /* top: 155px; */
   width: fit-content;
 
 
@@ -104,14 +132,15 @@
 .fullProfile_settingsDiv{
   position: relative;
   background: white;
-  top: 105px;
-  margin-bottom: 20px;
+  /* top: 105px; */
+  /* bottom: -105px; */
+  margin-bottom:   50px ;
   width: 80%;
   justify-self: center
 }
 .fullProfile_settngsSubDiv {
   margin: 5px auto;
-  width: 100%;
+  width: 80%;
 
 }
 .fullProfile_settings_header {
@@ -132,7 +161,7 @@
 }
 .fullProfile_settings {
   margin: 30px auto; 
-  width: 80%;
+  /* width: 80%; */
 
 }
 .fullProfile_settings p{
@@ -146,13 +175,16 @@
   flex: 2;
 }
 .fullProfile_settings .edit{
-  padding: 3px;
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
   border: 1px solid  rgba(64, 64, 87, .1);
   font-size: 12px;
   background-color: #f7f7f8;
   opacity: .6;  
-  display: block;
-  width: 70%
+  width: 80%;
+  height: 26px;
+  border-radius: 2px
 }
 .fullProfile_settings .number{
   width: 50%

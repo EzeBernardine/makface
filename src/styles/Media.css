@@ -29,7 +29,7 @@
   }
   .L_description {
     margin: 20% 0% 10% 0% !important;
-    font-size: 
+    /* font-size:  */
   }
 }
 @media only screen and (max-width: 600px) {

@@ -1,5 +1,6 @@
 
 .icons {
+  width: max-content;
   display: grid;
   justify-content: center;
 }

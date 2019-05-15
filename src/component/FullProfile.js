@@ -51,10 +51,11 @@ class FullProfile extends Component {
       phone: '000000000000',
       joined: '2019',
       religion: 'Christain',
+      shopFrontView: require('../image/shop2.jpg'),
       shopName: 'PrideOfAbia',
-      shopImg: require('../image/images.jpeg'),
+      profileImg: require('../image/images.jpeg'),
       shopYear: '1998',
-      aboutShop: "Hey-o! I created D3, a popular open-source JavaScript library for visualizing data. Until recently, I was also a graphics editor for The New York Times, where I helped produce a variety of data visualizations (such as Is It Better to Rent or Buy? and 512 Paths to the White House), maps (The Most Detailed Maps You’ll See From the Midterm Elections), and articles (A Game of Shark and Minnow). I write occasionally (Visualizing Algorithms, How To Scroll). You can see more of my work on my website and TwitterI was also a graphics editor for The New York Times, where I helped produce a variety of data visualizations (such as Is It Better to Rent or Buy? and 512 Paths to the White House), maps (The Most Detailed Maps You’ll See From the Midterm Elections), and articles (A Game of Shark and Minnow). I was also a graphics editor for The New York Times, where I helped produce a variety of data visualizations (such as Is It Better to Rent or Buy? and 512 Paths to the White House), maps (The Most Detailed Maps You’ll See From the Midterm Elections), and articles (A Game of Shark and Minnow). I was also a graphics editor for The New York Times, where I helped produce a variety of data visualizations (such as Is It Better to Rent or Buy? and 512 Paths to the White House), maps (The Most Detailed Maps You’ll See From the Midterm Elections), and articles (A Game of Shark and Minnow). I was also a graphics editor for The New York Times, where I helped produce a variety of data visualizations (such as Is It Better to Rent or Buy? and 512 Paths to the White House), maps (The Most Detailed Maps You’ll See From the Midterm Elections), and articles (A Game of Shark and Minnow). " ,
+      aboutShop: "Hey-o! I created D3, a popular open-source JavaScript library for visualizing data. Until recently, I was also a graphics editor for The New York Times, where I helped produce a variety of data visualizations (such as Is It Better to Rent or Buy? and 512 Paths to the White Houd 512 Paths to the White House), maps (The Most Detailed Maps You’ll See From the Midterm Elections), and ths to the White House), maps (The Most Detailed Maps You’ll See From the Midterm Elections), and articles (A Game of Shark and Minnow). ",
       shopLocation: 'nmcdf street',
       shopPhone: '000000000000',
       shopSite: 'www.prideofabia.com'
@@ -65,12 +66,19 @@ class FullProfile extends Component {
     return (
       <div className='FullProfile_container'>
         <div className='shopDiv'>
-          <img src={require('../image/shop2.jpg')} className='fullProfile_shopImg' />
-          <h1 className='fullProfile_shopName G_subHeaderFont G_dBCol'>{productsData.shopName} <span className='G_tooSmallFont G_BCol'>Since {productsData.date} </span></h1>
+          <div className='fullProfile_shopImgDiv'>
+            <div className='fullProfile_shopOverLayDiv'>
+              <img src={productsData.shopFrontView} className='fullProfile_shopImg' />
+              <div className='fullProfile_shopOverLay'> 
+                <a href='\' className='fullProfile_FaCamera G_Position'><FaCamera /></a> 
+              </div>
+            </div>
+            <h1 className='fullProfile_shopName G_subHeaderFont G_dBCol'>{productsData.shopName} <span className='G_tooSmallFont G_BCol'>Since {productsData.date} </span></h1>
+          </div>  
 
-          <div className='fullProfiledata'>
+          <div className='fullProfiledata'> 
             <div className='fullProfile_personal'>
-              <div><img src={productsData.shopImg} className='fullProfileImg' /></div>
+              <div><img src={productsData.profileImg} className='fullProfileImg' /></div>
 
               <div className='fullProfile_personal_main'>
                 <div className='fullProfileName'>
@@ -176,10 +184,6 @@ class FullProfile extends Component {
                   <p>
                     <span>Shop's url: </span>
                     <span><span className='edit' contentEditable={!edit}>{productsData.shopSite}</span></span>
-                  </p>
-                  <p>
-                    <span>Shop Front View:</span>
-                    <span> <input type='file' className='edit number' /></span>
                   </p>
                   <p>
                     <span>Shop Contact:</span>
