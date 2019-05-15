@@ -10,6 +10,7 @@ import LoadNew from './LoadNew';
 import NewsFeed from './NewsFeed';
 import Advert from './Advert';
 import FixedAsset from './FixedAsset';
+import Products from './Products';
 import FullProfile from './FullProfile';
 import '../styles/Media.css';
 
@@ -19,6 +20,7 @@ export default class Dashboard extends Component {
     cartDisplay: undefined,
     homeDisplay: undefined,
     fullProfileDisplay: undefined,
+    products: undefined
   };
   handleCartDisplay = () => this.setState(prevState => (
     {
@@ -31,6 +33,7 @@ export default class Dashboard extends Component {
       profile: true,
       cartDisplay: false,
       fullProfileDisplay: false,
+      products: false,
       homeDisplay: true
     }
   ))
@@ -40,6 +43,15 @@ export default class Dashboard extends Component {
       homeDisplay: false,
       profile: false,
       fullProfileDisplay: true,
+    }
+  ))
+  handleProductsDisplay = () => this.setState(prevState => (
+    {
+      profile: true,
+      cartDisplay: false,
+      homeDisplay: false,
+      fullProfileDisplay: false,
+      products: true
     }
   ))
 
@@ -55,7 +67,7 @@ export default class Dashboard extends Component {
   render() {
     let makface = ['Makface']
     let menu = ['Home', 'Notification', 'List of Shops', 'Cart'];
-    let { profile, cartDisplay, fullProfileDisplay } = this.state
+    let { profile, cartDisplay, fullProfileDisplay, products } = this.state
 
 
     return (
@@ -66,7 +78,7 @@ export default class Dashboard extends Component {
           profile &&
           <div className='Profile'>
             <Profile handleFullProfileDisplay={this.handleFullProfileDisplay} />
-            <ProductsCategories />
+            <ProductsCategories  handleProductsDisplay={this.handleProductsDisplay}/>
           </div>
         }
 
@@ -82,17 +94,23 @@ export default class Dashboard extends Component {
             fullProfileDisplay ?
               <div className='FullProfile'><FullProfile /></div>
               :
-              <div className='sub_dashboard_Container'>
-                <div className='shop_advert G_flex'>
-                  <div className='Advertisment'><Advert /></div>
-                  <div className='Assets '><FixedAsset /></div>
-                </div>
-                <div className='search_loadNew_newsFeed'>
+              products ?
+                <div className='displayedUpMenu sub_dashboard_Container'>
                   <div className='Searchbar centerContent '> <SearchBar /> </div>
-                  <div className='loadNew'>< LoadNew /> </div>
-                  <div className='newsFeed centerContent'><NewsFeed /></div>
+                  <Products />
                 </div>
-              </div>
+                :
+                <div className='sub_dashboard_Container'>
+                  <div className='shop_advert G_flex'>
+                    <div className='Advertisment'><Advert /></div>
+                    <div className='Assets '><FixedAsset /></div>
+                  </div>
+                  <div className='search_loadNew_newsFeed'>
+                    <div className='Searchbar centerContent '> <SearchBar /> </div>
+                    <div className='loadNew'>< LoadNew /> </div>
+                    <div className='newsFeed centerContent'><NewsFeed /></div>
+                  </div>
+                </div>
         }
 
 

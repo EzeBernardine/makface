@@ -3,7 +3,7 @@
 .ProductsCategories_main {
   padding: 10px;
 }
-.products {
+.ProductsCategories_products {
   border-bottom: 1px solid  rgba(64, 64, 87, .3);
   font-weight: bold;
   display: block
@@ -15,7 +15,8 @@
 .ProductsCategories_container li{
   list-style-type: none;
   padding: 2px 5px;
-  font-weight: bold
+  font-weight: bold;
+  cursor: pointer;
 }
 .ProductsCategories_container li:hover{
   background-color: rgba(64, 64, 87, .1);

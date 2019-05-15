@@ -10,7 +10,7 @@ import '../styles/Media.css';
 
 class ProductsCategories extends Component {
     state={
-    cartDisplay: undefined,
+    // cartDisplay: undefined,
   };
   render() {
     let products  = [
@@ -30,11 +30,11 @@ class ProductsCategories extends Component {
     ]
     return (
       <div className='ProductsCategories_main'>
-        <h1 className='G_dBCol G_smallestFont products'>Product Categories</h1>
+        <h1 className='G_dBCol G_smallestFont ProductsCategories_products'>Product Categories</h1>
           
         <ul className='G_dBCol ProductsCategories_container G_smBoda'>
         {
-          products.map((product) =>(<li className='G_tooSmallFont'>{product.name}</li>))
+          products.map((product) =>(<li className='G_tooSmallFont ProductsCategories_eachProduct'  onClick={this.props.handleProductsDisplay}>{product.name}</li>))
         }
         </ul>
       </div>
